@@ -1,123 +1,163 @@
-
 /* Reseteo inicial */
-*{
+* {
     margin: 0;
     padding: 0;
 }
+
 /* Final de reseteo */
 
+/* h1 oculto... ¿esto es anti SEO? */
+h1 {
+    display: none;
+}
+
+/* Font en la web, se usa Poppins desde Google */
 body {
     font-family: 'Poppins', sans-serif;
-  }
-  
-  header {
+}
+
+/* Header y nav bar con Logo */
+header {
     position: sticky;
     top: 0;
     background-color: #333;
     box-sizing: border-box;
     padding: 10px;
     height: 60px;
-  }
-  
-  .container {
+}
+
+.container {
     max-width: 960px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100%;
-  }
-  
-  .logo img {
+}
+
+.logo img {
     height: 60px;
     align-items: center;
-  }
-  
-  nav {
+}
+
+nav {
     display: flex;
     justify-content: flex-end;
-  }
-  
-  .navbar-links {
+}
+
+.navbar-links {
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
     align-items: center;
-  }
-  
-  .navbar-links li {
+}
+
+.navbar-links li {
     margin: 0 10px;
     border-bottom: 2px solid transparent;
     transition: border-bottom-color 0.2s ease-in-out;
     padding-right: 10px;
-  }
-  
-  
-  .navbar-links li a {
+}
+
+
+.navbar-links li a {
     color: white;
     text-decoration: none;
-  }
-  
-  .navbar-links li:last-child {
+}
+
+.navbar-links li:last-child {
     margin-right: 50px;
     border-right: none;
     padding-right: 0;
-  }
-  
-  .navbar-links li:first-child {
+}
+
+.navbar-links li:first-child {
     margin-left: 0;
-  }
-  
-  .navbar-links li:hover {
+}
+
+.navbar-links li:hover {
     border-bottom-color: #fff;
     padding-bottom: 1px;
-  }
-  
-  .navbar-links li.active {
+}
+
+.navbar-links li.active {
     border-right: none;
     border-bottom: 2px solid #8B0000;
     border-radius: 10px;
     background-color: #8B0000;
     padding: 5px 10px 3px 10px;
-  }
-  
-  .navbar-links li.active:hover {
+}
+
+.navbar-links li.active:hover {
     background-color: #710000;
     transition: background-color 0.3s ease-in-out;
     padding-bottom: 3px;
-  
-  }
-  
-  .barra {
+
+}
+/* Final header y nav bar con Logo */
+
+/* Barra pre Slider / Banner */
+.barra {
     background-color: black;
     height: 25px;
     text-align: center;
     align-items: center;
-  }
-  
-  .barra p {
+}
+
+.barra p {
     color: white;
     font-size: 15;
     margin: 0;
-  }
-  
-  .banner {
+}
+
+/* Slider / Banner */
+.banner {
     width: 100%;
     max-height: 480px;
-  }
-  
-  .banner img {
+}
+
+.banner img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
-  
-  .contenido {
+}
+
+/* Spacer para contenido y coso de contenido*/
+.contenido {
     padding-top: 50px;
-  }
-  
-  .caja {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenido .spotify {
+    flex-basis: calc(40% - 10px);
+    margin-right: 10px;
+}
+
+.contenido .descripcion {
+    flex-basis: calc(60% - 10px);
+}
+
+.contenido p {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+/* iframe en contenido */
+.contenido iframe {
+    width: 100%;
+    height: 380px;
+    border: none;
+    margin-bottom: 30px;
+}
+
+/* Model de "caja" */
+.caja {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -130,80 +170,36 @@ body {
     border-radius: 20px;
     background-color: #f5f5f5;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
-  }
-  
-  .caja h2 {
+}
+
+.caja h2 {
     font-size: 48px;
     font-weight: bold;
     text-align: center;
     margin-bottom: 30px;
-  }
-  
-  .contenido {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .contenido iframe {
-    width: 100%;
-    height: 380px;
-    border: none;
-    margin-bottom: 30px;
-  }
-  
-  .main p {
+}
+
+.main p {
     flex-basis: calc(50% - 10px);
     margin: 0 10px;
     font-size: 18px;
     line-height: 1.5;
     text-align: justify;
-  }
-  
-  .contenido {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .contenido .spotify {
-    flex-basis: calc(40% - 10px);
-    margin-right: 10px;
-  }
-  
-  .contenido .descripcion {
-    flex-basis: calc(60% - 10px);
-  }
-  
-  .contenido iframe {
-    width: 100%;
-    height: 380px;
-    border: none;
-    margin-bottom: 30px;
-  }
-  
-  .contenido p {
-    margin: 0;
-    font-size: 18px;
-    line-height: 1.5;
-    text-align: justify;
-  }
-  
-  h2 {
+}
+
+h2 {
     text-align: center;
-  }
-  
-  .containerccortos {
+}
+
+.containerccortos {
     display: flex;
     justify-content: space-between;
     max-width: 80%;
     align-items: center;
     margin: 0 auto;
-  }
-  
-  .boxccortos {
+}
+
+.boxccortos {
     width: 30%;
     border-radius: 10px;
     border: 2px solid black;
@@ -211,19 +207,19 @@ body {
     text-align: center;
     margin-bottom: 50px;
     height: 450px;
-  }
-  
-  .boxccortos img {
+}
+
+.boxccortos img {
     width: 80%;
     border-radius: 10px;
-  }
-  
-  .boxccortos h2 {
+}
+
+.boxccortos h2 {
     margin-top: 10px;
     margin-bottom: 10px;
-  }
-  
-  .buttonccortos {
+}
+
+.buttonccortos {
     margin-top: 10px;
     padding: 10px 20px;
     border-radius: 5px;
@@ -233,20 +229,20 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     cursor: pointer;
-  }
-  
-  .newsletter-form {
+}
+
+.newsletter-form {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 50px;
-  }
-  
-  label {
+}
+
+label {
     margin-bottom: 10px;
-  }
-  
-  input[type="email"] {
+}
+
+input[type="email"] {
     padding: 10px;
     border: 2px solid #ccc;
     border-radius: 5px;
@@ -254,9 +250,9 @@ body {
     width: 100%;
     max-width: 400px;
     box-sizing: border-box;
-  }
-  
-  button[type="submit"] {
+}
+
+button[type="submit"] {
     background-color: #8B0000;
     border: none;
     color: white;
@@ -268,9 +264,11 @@ body {
     border-radius: 5px;
     cursor: pointer;
     margin-top: 10px;
-  }
-  
-  footer {
+}
+
+
+/* FOOTER */
+footer {
     background-color: #333;
     color: #fff;
     display: flex;
@@ -278,53 +276,54 @@ body {
     justify-content: space-between;
     padding: 20px;
     align-items: center;
-  }
-  
-  footer a {
+}
+
+footer a {
     color: #fff;
-  }
-  
-  .columna-izquierda {
+}
+
+.columna-izquierda {
     display: flex;
     flex-direction: column;
-  }
-  
-  .columna-izquierda img {
+}
+
+.columna-izquierda img {
     height: 50px;
-  }
-  
-  .columna-izquierda a {
+}
+
+.columna-izquierda a {
     margin-top: 10px;
-  }
-  
-  .columna-central,
-  .columna-derecha {
+}
+
+.columna-central,
+.columna-derecha {
     flex-basis: calc(33.33% - 20px);
-  }
-  
-  .columna-central h4,
-  .columna-derecha h4 {
+}
+
+.columna-central h4,
+.columna-derecha h4 {
     margin-top: 0;
-  }
-  
-  .columna-central ul,
-  .columna-derecha ul {
+}
+
+.columna-central ul,
+.columna-derecha ul {
     list-style: none;
     margin: 0;
     padding: 0;
-  }
-  
-  .columna-central a,
-  .columna-derecha a {
+}
+
+.columna-central a,
+.columna-derecha a {
     text-decoration: none;
-  }
-  
-  .columna-central li,
-  .columna-derecha li {
+}
+
+.columna-central li,
+.columna-derecha li {
     margin-bottom: 10px;
-  }
-  
-  .columna-derecha i {
+}
+
+.columna-derecha i {
     font-size: 1.5rem;
     margin-right: 10px;
-  }
+}
+/* FOOTER */
