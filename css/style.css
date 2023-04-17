@@ -169,25 +169,25 @@ header {
     align-items: center;
     justify-content: center;
     width: 80%;
-    max-width: 768px; /* Modificación */
+    max-width: 768px;
     margin: 50px auto;
-    padding: 0 20px; /* Modificación */
+    padding: 0 20px;
     border-radius: 20px;
     background-color: #f5f5f5;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
 }
 
 .caja h2 {
-    font-size: 32px; /* Modificación */
+    font-size: 32px;
     font-weight: bold;
     text-align: center;
-    margin-bottom: 20px; /* Modificación */
+    margin-bottom: 20px;
 }
 
 .main p {
-    flex-basis: calc(100% - 20px); /* Modificación */
-    margin: 0 0 20px 0; /* Modificación */
-    font-size: 16px; /* Modificación */
+    flex-basis: calc(100% - 20px);
+    margin: 0 0 20px 0;
+    font-size: 16px;
     line-height: 1.5;
     text-align: justify;
 }
@@ -198,23 +198,23 @@ h2 {
 
 .containerccortos {
     display: flex;
-    flex-wrap: wrap; /* Modificación */
+    flex-wrap: wrap;
     justify-content: space-between;
     max-width: 80%;
     margin: 0 auto;
 }
 
 .boxccortos {
-    width: 100%; /* Modificación */
+    width: 100%;
     border-radius: 10px;
     border: 2px solid black;
     padding: 20px;
     text-align: center;
-    margin-bottom: 20px; /* Modificación */
+    margin-bottom: 20px;
 }
 
 .boxccortos img {
-    width: 100%; /* Modificación */
+    width: 100%;
     border-radius: 10px;
 }
 
@@ -239,7 +239,7 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 20px; /* Modificación */
+    margin-bottom: 20px;
 }
 
 label {
@@ -270,6 +270,18 @@ button[type="submit"] {
     margin-top: 10px;
 }
 
+.copy-button {
+    background-color: #8B0000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .copy-button:hover {
+    background-color: #710000;
+  }
 
 }
 
@@ -541,6 +553,21 @@ button[type="submit"] {
         cursor: pointer;
         margin-top: 10px;
     }
+
+    .copy-button {
+        background-color: #8B0000;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        padding: 10px 20px;
+        cursor: pointer;
+      }
+      
+      .copy-button:hover {
+        background-color: #710000;
+      }
+      
+      
 }
 
 /* ------------------------------------------------------------------- */
