@@ -23,7 +23,9 @@
                     <img src="./imagenes/logo.png" alt="Logo">
                 </div>
             </a>
-            <nav>
+
+            <!-- respaldo nav original -->
+            <!-- <nav>
                 <ul class="navbar-links">
                     <li class="active"><a href="#">Inicio</a></li>
                     <li><a href="./secciones/asesinos-seriales.html">Asesinos Seriales</a></li>
@@ -31,7 +33,36 @@
                     <li><a href="./secciones/video-recitales.html">Video Recitales</a></li>
                     <li><a href="./secciones/contacto.html">Contacto</a></li>
                 </ul>
+            </nav> -->
+
+            <nav class="navbar navbar-expand-md navbar-light">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+                    aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarMenu">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./secciones/asesinos-seriales.html">Asesinos Seriales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./secciones/cuentos-cortos.html">Cuentos Cortos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./secciones/video-recitales.html">Video Recitales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./secciones/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
+
+
+
         </div>
     </header>
     <!-- Final header con Nav Bar y Logo -->
@@ -110,9 +141,7 @@
         </div>
 
         <!-- Titulo de cuentos cortos -->
-        <p>
         <h2>Cuentos cortos favoritos de este mes</h2>
-        </p>
 
         <!-- Tribox de los cuentos cortos -->
 
@@ -151,13 +180,15 @@
         </div>
 
         <!-- Formulario de Newsletter -->
-        <h2>Mantente al día con el terror</h2>
-        <div class="newsletter-form">
-            <form>
-                <label for="email">Ingresa tu correo electrónico:</label>
-                <input type="email" id="email" name="email" required>
-                <button type="submit">Suscribirme</button>
-            </form>
+        <div class="newscont">
+            <h2>Mantente al día con el terror</h2>
+            <div class="newsletter-form">
+                <form>
+                    <label for="email">Ingresa tu correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                    <button type="submit">Suscribirme</button>
+                </form>
+            </div>
         </div>
 
     </main>

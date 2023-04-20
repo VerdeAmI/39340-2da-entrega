@@ -17,170 +17,418 @@ body {
 }
 
 
+
+/* ------------------------------------------------------------------- */
+/* CSS Global / Pantallas tamaño escritorio */
+
+/* Header y nav bar con Logo */
+header {
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    box-sizing: border-box;
+    padding: 10px;
+    height: 60px;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.logo img {
+    height: 60px;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar-nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.navbar-nav li {
+    margin: 0 10px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom-color 0.2s ease-in-out;
+    padding-right: 10px;
+}
+
+
+.navbar-nav li a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-nav li:last-child {
+    margin-right: 50px;
+    border-right: none;
+    padding-right: 0;
+}
+
+.navbar-nav li:first-child {
+    margin-left: 0;
+}
+
+.navbar-nav li:hover {
+    border-bottom-color: #fff;
+    padding-bottom: 1px;
+}
+
+.navbar-nav li.active {
+    border-right: none;
+    border-bottom: 2px solid #8B0000;
+    border-radius: 10px;
+    background-color: #8B0000;
+    padding: 5px 10px 3px 10px;
+}
+
+.navbar-nav li.active:hover {
+    background-color: #710000;
+    transition: background-color 0.3s ease-in-out;
+    padding-bottom: 3px;
+
+}
+
+/* Final header y nav bar con Logo */
+
+/* Barra pre Slider / Banner */
+.barra {
+    background-color: black;
+    height: 25px;
+    text-align: center;
+    align-items: center;
+}
+
+.barra p {
+    color: white;
+    font-size: 15;
+    margin: 0;
+}
+
+/* Slider / Banner */
+.banner {
+    width: 100%;
+    max-height: 480px;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Spacer para contenido y coso de contenido*/
+.contenido {
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenido .spotify {
+    flex-basis: calc(40% - 10px);
+    margin-right: 10px;
+}
+
+.contenido .descripcion {
+    flex-basis: calc(60% - 10px);
+}
+
+.contenido p {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+/* iframe en contenido */
+.contenido iframe {
+    width: 100%;
+    height: 380px;
+    border: none;
+    margin-bottom: 30px;
+}
+
+/* Model de "caja" */
+.caja {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding-right: 50px;
+    padding-left: 50px;
+    border-radius: 20px;
+    background-color: #f5f5f5;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.caja h2 {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+
+.main p {
+    flex-basis: calc(50% - 10px);
+    margin: 0 10px;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+h2 {
+    text-align: center;
+}
+
+.containerccortos {
+    display: flex;
+    justify-content: space-between;
+    max-width: 80%;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.boxccortos {
+    width: 30%;
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+    height: 450px;
+}
+
+.boxccortos img {
+    width: 80%;
+    border-radius: 10px;
+}
+
+.boxccortos h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.buttonccortos {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #8B0000;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+input[type="email"] {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    background-color: #8B0000;
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.copy-button {
+    background-color: #8B0000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.copy-button:hover {
+    background-color: #710000;
+}
+
+.cont-flu-container {
+    display: flex;
+    padding-top: 50px;
+    justify-content: space-between;
+    max-width: 80%;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.cont-flu-container h2 {
+    text-align: center;
+}
+
+.boxccortosg {
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+    height: 450px;
+}
+
+.boxccortosg img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.boxccortosg h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #8B0000;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #ccc;
+}
+
+.submit-btn {
+    background-color: #8B0000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #710000;
+}
+
+.descripcioncto p {
+padding-bottom: 50px;
+}
+
+.descripcioncto button {
+    margin-bottom: 30px;
+}
+
+
+
 /* ------------------------------------------------------------------- */
 /* Pantallas tamaño smartphone */
 @media (max-width: 768px) {
     /* Estilos para pantallas de hasta 768px */
     /* Pantallas tamaño smartphone */
 
-    /* Header y nav bar con Logo */
-    header {
-        position: sticky;
-        top: 0;
-        background-color: #333;
-        box-sizing: border-box;
-        padding: 10px;
-        height: 60px;
-    }
-
-    .container {
-        max-width: 960px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 100%;
-    }
-
-    .logo img {
-        height: 60px;
-        align-items: center;
-    }
+    /* la burguer */
 
     nav {
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
+        margin-right: 40%;
     }
 
-    .navbar-links {
-        display: flex;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        align-items: center;
-    }
-
-    .navbar-links li {
-        margin: 0 10px;
-        border-bottom: 2px solid transparent;
-        transition: border-bottom-color 0.2s ease-in-out;
-        padding-right: 10px;
-    }
-
-    .navbar-links li a {
-        color: white;
+    .navbar-nav li {
         text-decoration: none;
+        white-space: nowrap;
+        font-size: 14px;
     }
 
-    .navbar-links li:last-child {
-        margin-right: 50px;
-        border-right: none;
-        padding-right: 0;
-    }
+    .navbar-collapse {
+        position: absolute;
+        top: 90%;
+        background-color: #444;
+        border-radius: 12px;
+        padding: 10px;
+      }
 
-    .navbar-links li:first-child {
-        margin-left: 0;
-    }
+      .navbar-collapse .nav-link {
+        padding: 0.5rem 1rem;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      }
+      
 
-    .navbar-links li:hover {
-        border-bottom-color: #fff;
-        padding-bottom: 1px;
-    }
-
-    .navbar-links li.active {
-        border-right: none;
-        border-bottom: 2px solid #8B0000;
-        border-radius: 10px;
-        background-color: #8B0000;
-        padding: 5px 10px 3px 10px;
-    }
-
-    .navbar-links li.active:hover {
-        background-color: #710000;
-        transition: background-color 0.3s ease-in-out;
-        padding-bottom: 3px;
-    }
-
-    /* Final header y nav bar con Logo */
-
-    /* Barra pre Slider / Banner */
-    .barra {
-        background-color: black;
-        height: 25px;
-        text-align: center;
-        align-items: center;
-    }
-
-    .barra p {
-        color: white;
-        font-size: 15;
-        margin: 0;
-    }
-
-    /* Slider / Banner */
-    .banner {
-        width: 100%;
-        max-height: 480px;
-    }
-
-    .banner img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    /* Spacer para contenido y coso de contenido*/
     .contenido {
-        padding-top: 50px;
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .contenido .spotify {
-        flex-basis: calc(40% - 10px);
-        margin-right: 10px;
-    }
-
-    .contenido .descripcion {
-        flex-basis: calc(60% - 10px);
+        flex-direction: column;
     }
 
     .contenido p {
-        margin: 0;
-        font-size: 18px;
-        line-height: 1.5;
-        text-align: justify;
+        font-size: 15px;
     }
 
-    /* iframe en contenido */
-    .contenido iframe {
-        width: 100%;
-        height: 380px;
-        border: none;
-        margin-bottom: 30px;
-    }
-
-    /* Model de "caja" */
     .caja {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 80%;
         max-width: 768px;
-        margin: 50px auto;
         padding: 0 20px;
-        border-radius: 20px;
-        background-color: #f5f5f5;
-        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
     }
 
     .caja h2 {
         font-size: 32px;
-        font-weight: bold;
-        text-align: center;
         margin-bottom: 20px;
     }
 
@@ -188,102 +436,23 @@ body {
         flex-basis: calc(100% - 20px);
         margin: 0 0 20px 0;
         font-size: 16px;
-        line-height: 1.5;
-        text-align: justify;
-    }
-
-    h2 {
-        text-align: center;
     }
 
     .containerccortos {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
-        max-width: 80%;
-        margin: 0 auto;
     }
 
     .boxccortos {
         width: 100%;
-        border-radius: 10px;
-        border: 2px solid black;
-        padding: 20px;
-        text-align: center;
         margin-bottom: 20px;
     }
 
     .boxccortos img {
         width: 100%;
-        border-radius: 10px;
     }
 
-    .boxccortos h2 {
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
-    .buttonccortos {
-        margin-top: 10px;
-        padding: 10px 20px;
-        border-radius: 5px;
-        border: none;
-        background-color: #8B0000;
-        color: white;
-        font-weight: bold;
-        text-transform: uppercase;
-        cursor: pointer;
-    }
-
-    .newsletter-form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 20px;
-    }
-
-    label {
-        margin-bottom: 10px;
-    }
-
-    input[type="email"] {
-        padding: 10px;
-        border: 2px solid #ccc;
-        border-radius: 5px;
-        font-size: 16px;
-        width: 100%;
-        max-width: 400px;
-        box-sizing: border-box;
-    }
-
-    button[type="submit"] {
-        background-color: #8B0000;
-        border: none;
-        color: white;
-        padding: 12px 20px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        border-radius: 5px;
-        cursor: pointer;
-        margin-top: 10px;
-    }
-
-    .copy-button {
-        background-color: #8B0000;
-        color: #fff;
-        border: none;
-        border-radius: 4px;
-        padding: 10px 20px;
-        cursor: pointer;
-    }
-
-    .copy-button:hover {
-        background-color: #710000;
-    }
-
-    .container-fluid {
+    .cont-flu-container {
         display: flex;
         padding-top: 50px;
         justify-content: space-between;
@@ -292,79 +461,13 @@ body {
         margin: 0 auto;
     }
 
-    .container-fluid h2 {
+    .cont-flu-container h2 {
         text-align: center;
     }
 
-    .boxccortosg {
-        width: 100%;
-        border-radius: 10px;
-        border: 2px solid black;
-        padding: 20px;
-        text-align: center;
-        margin-bottom: 50px;
-        height: 450px;
-    }
-
-    .boxccortosg img {
-        width: 100%;
-        border-radius: 10px;
-    }
-
-    .boxccortosg h2 {
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
-    .contact-form form {
-        display: flex;
-        flex-direction: column;
-        max-width: 600px;
-        margin: 0 auto;
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-
-    .form-group {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 20px;
-    }
-
-    .form-group label {
-        margin-bottom: 5px;
-    }
-
-    .form-group input,
-    .form-group textarea {
-        border: 1px solid #ccc;
-        padding: 10px;
-        font-size: 16px;
-    }
-
-    .form-group input:focus,
-    .form-group textarea:focus {
-        outline: none;
-        border-color: #8B0000;
-    }
-
-    .form-group input::placeholder,
-    .form-group textarea::placeholder {
-        color: #ccc;
-    }
-
-    .submit-btn {
-        background-color: #8B0000;
-        color: #fff;
-        border: none;
-        padding: 10px 20px;
-        font-size: 16px;
-        cursor: pointer;
-    }
-
-    .submit-btn:hover {
-        background-color: #710000;
-    }
+    .descripcioncto p {
+        padding-bottom: 25px;
+        }
 
 }
 
@@ -378,367 +481,6 @@ body {
     /* PROXIMAMENTE */
 
 }
-
-
-/* ------------------------------------------------------------------- */
-/* Pantallas tamaño escritorio */
-@media (min-width: 993px) {
-    /* Estilos para pantallas de 993px en adelante */
-    /* Pantallas tamaño escritorio */
-
-    /* Header y nav bar con Logo */
-    header {
-        position: sticky;
-        top: 0;
-        background-color: #333;
-        box-sizing: border-box;
-        padding: 10px;
-        height: 60px;
-    }
-
-    .container {
-        max-width: 960px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 100%;
-    }
-
-    .logo img {
-        height: 60px;
-        align-items: center;
-    }
-
-    nav {
-        display: flex;
-        justify-content: flex-end;
-    }
-
-    .navbar-links {
-        display: flex;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        align-items: center;
-    }
-
-    .navbar-links li {
-        margin: 0 10px;
-        border-bottom: 2px solid transparent;
-        transition: border-bottom-color 0.2s ease-in-out;
-        padding-right: 10px;
-    }
-
-
-    .navbar-links li a {
-        color: white;
-        text-decoration: none;
-    }
-
-    .navbar-links li:last-child {
-        margin-right: 50px;
-        border-right: none;
-        padding-right: 0;
-    }
-
-    .navbar-links li:first-child {
-        margin-left: 0;
-    }
-
-    .navbar-links li:hover {
-        border-bottom-color: #fff;
-        padding-bottom: 1px;
-    }
-
-    .navbar-links li.active {
-        border-right: none;
-        border-bottom: 2px solid #8B0000;
-        border-radius: 10px;
-        background-color: #8B0000;
-        padding: 5px 10px 3px 10px;
-    }
-
-    .navbar-links li.active:hover {
-        background-color: #710000;
-        transition: background-color 0.3s ease-in-out;
-        padding-bottom: 3px;
-
-    }
-
-    /* Final header y nav bar con Logo */
-
-    /* Barra pre Slider / Banner */
-    .barra {
-        background-color: black;
-        height: 25px;
-        text-align: center;
-        align-items: center;
-    }
-
-    .barra p {
-        color: white;
-        font-size: 15;
-        margin: 0;
-    }
-
-    /* Slider / Banner */
-    .banner {
-        width: 100%;
-        max-height: 480px;
-    }
-
-    .banner img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    /* Spacer para contenido y coso de contenido*/
-    .contenido {
-        padding-top: 50px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .contenido .spotify {
-        flex-basis: calc(40% - 10px);
-        margin-right: 10px;
-    }
-
-    .contenido .descripcion {
-        flex-basis: calc(60% - 10px);
-    }
-
-    .contenido p {
-        margin: 0;
-        font-size: 18px;
-        line-height: 1.5;
-        text-align: justify;
-    }
-
-    /* iframe en contenido */
-    .contenido iframe {
-        width: 100%;
-        height: 380px;
-        border: none;
-        margin-bottom: 30px;
-    }
-
-    /* Model de "caja" */
-    .caja {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 80%;
-        max-width: 1200px;
-        margin: 50px auto;
-        padding-right: 50px;
-        padding-left: 50px;
-        border-radius: 20px;
-        background-color: #f5f5f5;
-        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
-    }
-
-    .caja h2 {
-        font-size: 48px;
-        font-weight: bold;
-        text-align: center;
-        margin-bottom: 30px;
-    }
-
-    .main p {
-        flex-basis: calc(50% - 10px);
-        margin: 0 10px;
-        font-size: 18px;
-        line-height: 1.5;
-        text-align: justify;
-    }
-
-    h2 {
-        text-align: center;
-    }
-
-    .containerccortos {
-        display: flex;
-        justify-content: space-between;
-        max-width: 80%;
-        align-items: center;
-        margin: 0 auto;
-    }
-
-    .boxccortos {
-        width: 30%;
-        border-radius: 10px;
-        border: 2px solid black;
-        padding: 20px;
-        text-align: center;
-        margin-bottom: 50px;
-        height: 450px;
-    }
-
-    .boxccortos img {
-        width: 80%;
-        border-radius: 10px;
-    }
-
-    .boxccortos h2 {
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
-    .buttonccortos {
-        margin-top: 10px;
-        padding: 10px 20px;
-        border-radius: 5px;
-        border: none;
-        background-color: #8B0000;
-        color: white;
-        font-weight: bold;
-        text-transform: uppercase;
-        cursor: pointer;
-    }
-
-    .newsletter-form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 50px;
-    }
-
-    label {
-        margin-bottom: 10px;
-    }
-
-    input[type="email"] {
-        padding: 10px;
-        border: 2px solid #ccc;
-        border-radius: 5px;
-        font-size: 16px;
-        width: 100%;
-        max-width: 400px;
-        box-sizing: border-box;
-    }
-
-    button[type="submit"] {
-        background-color: #8B0000;
-        border: none;
-        color: white;
-        padding: 12px 20px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        border-radius: 5px;
-        cursor: pointer;
-        margin-top: 10px;
-    }
-
-    .copy-button {
-        background-color: #8B0000;
-        color: #fff;
-        border: none;
-        border-radius: 4px;
-        padding: 10px 20px;
-        cursor: pointer;
-    }
-
-    .copy-button:hover {
-        background-color: #710000;
-    }
-
-    .container-fluid {
-        display: flex;
-        padding-top: 50px;
-        justify-content: space-between;
-        max-width: 80%;
-        align-items: center;
-        margin: 0 auto;
-    }
-
-    .container-fluid h2 {
-        text-align: center;
-    }
-
-    .boxccortosg {
-        width: 100%;
-        border-radius: 10px;
-        border: 2px solid black;
-        padding: 20px;
-        text-align: center;
-        margin-bottom: 50px;
-        height: 450px;
-    }
-
-    .boxccortosg img {
-        width: 100%;
-        border-radius: 10px;
-    }
-
-    .boxccortosg h2 {
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
-    .contact-form form {
-        display: flex;
-        flex-direction: column;
-        max-width: 600px;
-        margin: 0 auto;
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-
-    .form-group {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 20px;
-    }
-
-    .form-group label {
-        margin-bottom: 5px;
-    }
-
-    .form-group input,
-    .form-group textarea {
-        border: 1px solid #ccc;
-        padding: 10px;
-        font-size: 16px;
-    }
-
-    .form-group input:focus,
-    .form-group textarea:focus {
-        outline: none;
-        border-color: #8B0000;
-    }
-
-    .form-group input::placeholder,
-    .form-group textarea::placeholder {
-        color: #ccc;
-    }
-
-    .submit-btn {
-        background-color: #8B0000;
-        color: #fff;
-        border: none;
-        padding: 10px 20px;
-        font-size: 16px;
-        cursor: pointer;
-    }
-
-    .submit-btn:hover {
-        background-color: #710000;
-    }
-
-
-
-}
-
-
-
 
 
 
