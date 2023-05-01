@@ -1,4 +1,14 @@
 @charset "UTF-8";
+/* Font en la web, se usa Poppins desde Google */
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* h1 oculto*/
+h1 {
+  display: none;
+}
+
 /* Reseteo inicial */
 * {
   margin: 0;
@@ -6,16 +16,7 @@
 }
 
 /* Final de reseteo */
-/* h1 oculto... ¿esto es anti SEO? */
-h1 {
-  display: none;
-}
-
-/* Font en la web, se usa Poppins desde Google */
-body {
-  font-family: "Poppins", sans-serif;
-}
-
+/** Boton general **/
 /* ------------------------------------------------------------------- */
 /* CSS Global / Pantallas tamaño escritorio */
 /* Header y nav bar con Logo */
@@ -104,7 +105,6 @@ nav {
   text-align: center;
   align-items: center;
 }
-
 .barra p {
   color: white;
   font-size: 15;
@@ -116,12 +116,16 @@ nav {
   width: 100%;
   max-height: 480px;
 }
-
 .banner img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.space {
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 /* Spacer para contenido y coso de contenido*/
@@ -132,6 +136,18 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
+.contenido p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: justify;
+}
+.contenido iframe {
+  width: 100%;
+  height: 380px;
+  border: none;
+  margin-bottom: 30px;
+}
 
 .contenido .spotify {
   flex-basis: calc(40% - 10px);
@@ -140,21 +156,6 @@ nav {
 
 .contenido .descripcion {
   flex-basis: calc(60% - 10px);
-}
-
-.contenido p {
-  margin: 0;
-  font-size: 18px;
-  line-height: 1.5;
-  text-align: justify;
-}
-
-/* iframe en contenido */
-.contenido iframe {
-  width: 100%;
-  height: 380px;
-  border: none;
-  margin-bottom: 30px;
 }
 
 /* Model de "caja" */
@@ -172,7 +173,6 @@ nav {
   background-color: #f5f5f5;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
 }
-
 .caja h2 {
   font-size: 48px;
   font-weight: bold;
@@ -209,28 +209,32 @@ h2 {
   text-align: center;
   margin-bottom: 50px;
   height: 450px;
+  overflow: auto;
 }
-
 .boxccortos img {
   width: 80%;
   border-radius: 10px;
 }
-
 .boxccortos h2 {
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
 .buttonccortos {
-  margin-top: 10px;
   padding: 10px 20px;
-  border-radius: 5px;
-  border: none;
+  margin-top: 10px;
   background-color: #8B0000;
   color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
   font-weight: bold;
   text-transform: uppercase;
   cursor: pointer;
+}
+.buttonccortos:hover {
+  background-color: #710000;
+  color: white;
 }
 
 .newsletter-form {
@@ -255,33 +259,40 @@ input[type=email] {
 }
 
 button[type=submit] {
-  background-color: #8B0000;
-  border: none;
-  color: white;
-  padding: 12px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  border-radius: 5px;
-  cursor: pointer;
+  padding: 10px 20px;
   margin-top: 10px;
+  background-color: #8B0000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+button[type=submit]:hover {
+  background-color: #710000;
+  color: white;
 }
 
 .copy-button {
-  background-color: #8B0000;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
   padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #8B0000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
   cursor: pointer;
 }
-
 .copy-button:hover {
   background-color: #710000;
+  color: white;
 }
 
-.cont-flu-container {
+.contenedorccortosbt {
   display: flex;
   padding-top: 50px;
   justify-content: space-between;
@@ -289,8 +300,7 @@ button[type=submit] {
   align-items: center;
   margin: 0 auto;
 }
-
-.cont-flu-container h2 {
+.contenedorccortosbt h2 {
   text-align: center;
 }
 
@@ -301,14 +311,13 @@ button[type=submit] {
   padding: 20px;
   text-align: center;
   margin-bottom: 50px;
-  height: 450px;
+  height: 500px;
+  overflow: auto;
 }
-
 .boxccortosg img {
   width: 100%;
   border-radius: 10px;
 }
-
 .boxccortosg h2 {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -356,16 +365,20 @@ button[type=submit] {
 }
 
 .submit-btn {
-  background-color: #8B0000;
-  color: #fff;
-  border: none;
   padding: 10px 20px;
-  font-size: 16px;
+  margin-top: 10px;
+  background-color: #8B0000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
   cursor: pointer;
 }
-
 .submit-btn:hover {
   background-color: #710000;
+  color: white;
 }
 
 .descripcioncto p {
@@ -376,6 +389,78 @@ button[type=submit] {
   margin-bottom: 30px;
 }
 
+/* ------------------------------------------------------------------- */
+/* Pantallas tamaño tablet y phablet */
+@media (min-width: 769px) and (max-width: 992px) {
+  /* Estilos para pantallas entre 769px y 992px */
+  /* Pantallas tamaño tablet y phablet */
+  nav {
+    display: flex;
+    justify-content: center;
+    margin-right: 40%;
+  }
+  .navbar-nav li {
+    text-decoration: none;
+    white-space: nowrap;
+    font-size: 14px;
+  }
+  .navbar-collapse {
+    position: absolute;
+    top: 90%;
+    background-color: #444;
+    border-radius: 12px;
+    padding: 10px;
+  }
+  .navbar-collapse .nav-link {
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .contenido {
+    display: flex;
+    flex-direction: column;
+  }
+  .contenido p {
+    font-size: 15px;
+  }
+  .caja {
+    max-width: 768px;
+    padding: 0 20px;
+  }
+  .caja h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  .main p {
+    flex-basis: calc(100% - 20px);
+    margin: 0 0 20px 0;
+    font-size: 16px;
+  }
+  .containerccortos {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .boxccortos {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .boxccortos img {
+    width: 100%;
+  }
+  .cont-flu-container {
+    display: flex;
+    padding-top: 50px;
+    justify-content: space-between;
+    max-width: 80%;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .cont-flu-container h2 {
+    text-align: center;
+  }
+  .descripcioncto p {
+    padding-bottom: 25px;
+  }
+}
 /* ------------------------------------------------------------------- */
 /* Pantallas tamaño smartphone */
 @media (max-width: 768px) {
@@ -450,13 +535,6 @@ button[type=submit] {
   }
 }
 /* ------------------------------------------------------------------- */
-/* Pantallas tamaño tablet y phablet */
-@media (min-width: 769px) and (max-width: 992px) {
-  /* Estilos para pantallas entre 769px y 992px */
-  /* Pantallas tamaño tablet y phablet */
-  /* PROXIMAMENTE */
-}
-/* ------------------------------------------------------------------- */
 /* FOOTER */
 footer {
   background-color: #333;
@@ -467,7 +545,6 @@ footer {
   padding: 20px;
   align-items: center;
 }
-
 footer a {
   color: #fff;
 }
@@ -515,7 +592,4 @@ footer a {
 .columna-derecha i {
   font-size: 1.5rem;
   margin-right: 10px;
-}
-
-/* FOOTER */
-/* ------------------------------------------------------------------- *//*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
