@@ -18,7 +18,6 @@ h1 {
 /* Final de reseteo */
 /** Boton general **/
 /* ------------------------------------------------------------------- */
-/* CSS Global / Pantallas tamaño escritorio */
 /* Header y nav bar con Logo */
 header {
   position: sticky;
@@ -29,7 +28,7 @@ header {
   height: 60px;
 }
 
-.container {
+.headcontainer {
   max-width: 960px;
   margin: 0 auto;
   display: flex;
@@ -97,7 +96,6 @@ nav {
   padding-bottom: 3px;
 }
 
-/* Final header y nav bar con Logo */
 /* Barra pre Slider / Banner */
 .barra {
   background-color: black;
@@ -231,10 +229,15 @@ h2 {
   font-weight: bold;
   text-transform: uppercase;
   cursor: pointer;
+  margin-bottom: 10px;
 }
 .buttonccortos:hover {
   background-color: #710000;
   color: white;
+}
+
+.submitbutton {
+  align-items: center;
 }
 
 .newsletter-form {
