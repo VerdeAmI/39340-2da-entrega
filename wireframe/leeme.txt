@@ -1,7 +1,0 @@
-Hola! por si fuese necesario para la evaluación, dejo acá el primer
-wireframe y el último que desarrollé para este proyecto.
-
-Tuvo pocos cambios, por no decir que casi ninguno, solo uno:
-
-No logré dejar ese carrusel de cuentos, o sea si, lo logré usando
-boostrap pero no como yo quería al 100% así que no tuve más remedio que dejarlo.
